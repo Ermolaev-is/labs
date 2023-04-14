@@ -27,9 +27,9 @@ int main()
     cin >> maxSize;
     try
     {
-        if (cin.peek() != '\n')
+        if (cin.peek() != '\n' || maxSize<1)
         {
-            throw runtime_error("The length of the array must be a non-negative integer");
+            throw runtime_error("The length of the array must be a positive integer");
         }
     }
     catch (exception const& e) 
